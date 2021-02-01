@@ -1,3 +1,4 @@
+"use strict";
 
 function changeArrow(arrowIndex) {
     let arrowDiv = document.getElementsByClassName("arrow")[arrowIndex - 1];
