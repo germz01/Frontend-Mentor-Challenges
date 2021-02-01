@@ -1,0 +1,185 @@
+:root {
+    --veryDarkMagenta: hsl(300, 43%, 22%);
+    --softPink: hsl(333, 80%, 67%);
+    --darkGrayishMagenta: hsl(303, 10%, 53%);
+    --lightGrayishMagenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+}
+
+html {
+    box-sizing: border-box;
+    font-size:62.5%;
+}
+
+*, *::before, ::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-family: 'Spartan', sans-serif;
+    color: var(--veryDarkMagenta);
+}
+
+h3 {
+    font-family: 'Spartan', sans-serif;
+    color: var(--darkGrayishMagenta);
+}
+
+p {
+    font-family: 'Spartan', sans-serif;
+    color: var(--veryDarkMagenta);
+}
+
+#container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#card {
+    width: 75%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: stretch;
+    background-color: white;
+}
+
+#presentation {
+    flex: 1;
+    order: 1
+}
+
+#presentation h2 {
+    margin: 0;
+    font-size: 6rem;
+    font-weight: 700;
+}
+
+#presentation h3 {
+    margin: 1rem 0 0 0;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+#reviews {
+    flex: 1;
+    order: 2;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.review {
+    background-color: var(--lightGrayishMagenta);
+    flex: 1 0 5.5rem;
+    width: 44.5rem;
+    margin-top: 1.8rem;
+    border: 0px solid var(--lightGrayishMagenta);
+    border-radius: 0.75rem;
+}
+
+.review:nth-child(1){
+    order: 1;
+}
+
+.review:nth-child(2) {
+    order: 2;
+    margin-left: 5.5rem;
+}
+
+.review:nth-child(3) {
+    order: 3;
+    margin-left: 11rem;
+}
+
+.review p {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 1.7rem;
+}
+
+.review span {
+    margin-left: 2rem;
+}
+
+#bottomContent {
+    order: 3;
+    flex: 2 0 100%;
+    margin-top: 8rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.bottomCard {
+    flex: 0 0 41rem;
+    height: 23.5rem;
+    background-color: var(--veryDarkMagenta);
+    border: 0px solid var(--veryDarkMagenta);
+    border-radius: 0.75rem;
+    position: relative;
+}
+
+#bottomContent .bottomCard:nth-child(2){
+    margin-top: 1.5rem;
+}
+
+#bottomContent .bottomCard:nth-child(3){
+    margin-top: 3rem;
+}
+
+.bottomCard .cardContent {
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    top: 25%;
+    bottom: 25%;
+}
+
+.bottomCard .cardContent .upper div h2 {
+    margin: 0;
+}
+
+.bottomCard .cardContent .upper div img {
+    border-radius: 50%;
+    width: 5rem;
+}
+
+.bottomCard .cardContent .bottom p {
+    color: white;
+    font-size: 1.47rem;
+    margin: 3rem 0 0 0;
+}
+
+.bottomCard .cardContent .upper {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.bottomCard .cardContent .upper div:nth-child(2) {
+    margin-left: 2.5rem;
+}
+
+.bottomCard .cardContent .upper div h2:first-of-type {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.bottomCard .cardContent #pink {
+    color: var(--softPink);
+    font-weight: 400;
+}
