@@ -1,0 +1,53 @@
+@use 'variables';
+#text-area { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-flow: column wrap; flex-flow: column wrap; }
+
+#text-area .text-content { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; width: 75%; border-bottom: 0.1rem solid #e7e7e9; }
+
+#text-area .text-content .header { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-flow: row nowrap; flex-flow: row nowrap; -webkit-box-align: baseline; -ms-flex-align: baseline; align-items: baseline; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+
+#text-area .text-content .header .text { -webkit-box-flex: 1; -ms-flex: 1 0 content; flex: 1 0 content; }
+
+#text-area .text-content .header .text h3 { font-family: 'Kumbh Sans', sans-serif; font-size: 1.2rem; font-weight: 400; color: #4a4b5e; margin: 1rem 0 0 0; }
+
+#text-area .text-content .header .arrow { -webkit-box-flex: 0; -ms-flex: 0 0 1rem; flex: 0 0 1rem; height: 0.7rem; background-image: url("../images/icon-arrow-down.svg"); background-repeat: no-repeat; background-position: bottom right; background-size: contain; }
+
+#text-area .text-content p { font-family: 'Kumbh Sans', sans-serif; font-size: 1.2rem; font-weight: 400; color: #787887; height: 0%; }
+
+@-webkit-keyframes flipArrowUp { from { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  to { -webkit-transform: rotate(180deg); transform: rotate(180deg); } }
+
+@keyframes flipArrowUp { from { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  to { -webkit-transform: rotate(180deg); transform: rotate(180deg); } }
+
+@-webkit-keyframes flipArrowDown { from { -webkit-transform: rotate(180deg); transform: rotate(180deg); }
+  to { -webkit-transform: rotate(0deg); transform: rotate(0deg); } }
+
+@keyframes flipArrowDown { from { -webkit-transform: rotate(180deg); transform: rotate(180deg); }
+  to { -webkit-transform: rotate(0deg); transform: rotate(0deg); } }
+
+@-webkit-keyframes toBoldText { from { font-weight: 400; }
+  to { font-weight: 700; } }
+
+@keyframes toBoldText { from { font-weight: 400; }
+  to { font-weight: 700; } }
+
+@-webkit-keyframes toRegularText { from { font-weight: 700; }
+  to { font-weight: 400; } }
+
+@keyframes toRegularText { from { font-weight: 700; }
+  to { font-weight: 400; } }
+
+html { -webkit-box-sizing: border-box; box-sizing: border-box; font-size: 62.5%; }
+
+*, *::before, ::after { -webkit-box-sizing: inherit; box-sizing: inherit; }
+
+body { margin: 0; padding: 0; }
+
+#flex-container { width: 100%; height: 100vh; background: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7)); background: linear-gradient(#af67e9, #6565e7); display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-flow: row nowrap; flex-flow: row nowrap; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+#flex-container #accordion-card { -webkit-box-flex: 0; -ms-flex: 0 0 92.2rem; flex: 0 0 92.2rem; background: white; height: 50.8rem; background: white; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-flow: row nowrap; flex-flow: row nowrap; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; }
+
+#flex-container #accordion-card .accordion-column { -webkit-box-flex: 0; -ms-flex: 0 0 50%; flex: 0 0 50%; height: 100%; }
+
+#flex-container #accordion-card .accordion-column #column-content h2 { font-family: 'Kumbh Sans', sans-serif; font-size: 3rem; font-weight: 700; }
+/*# sourceMappingURL=stylesheet.css.map */

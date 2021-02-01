@@ -1,0 +1,88 @@
+@use 'variables';
+
+#text-area {
+    display: flex;
+    flex-flow: column wrap;
+
+    .text-content {
+        flex: 1;
+        width: 75%;
+        border-bottom: 0.1rem solid $lightGrayishBlue;
+
+        .header {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: baseline;
+            justify-content: space-between;
+
+            .text {
+                flex: 1 0 content;
+
+                h3 {
+                    font-family: 'Kumbh Sans', sans-serif;
+                    font-size: 1.2rem;
+                    font-weight: 400;
+                    color: $veryDarkGrayishBlue;
+                    margin: 1rem 0 0 0;
+                }
+            }
+
+            .arrow {
+                flex: 0 0 1rem;
+                height: 0.7rem;
+                background-image: url('../images/icon-arrow-down.svg');
+                background-repeat: no-repeat;
+                background-position: bottom right;
+                background-size: contain;
+            }
+        }
+
+        p {
+            font-family: 'Kumbh Sans', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: $darkGrayishBlue;
+            height: 0%;
+        }
+    }
+}
+
+@keyframes flipArrowUp {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes flipArrowDown {
+    from {
+        transform: rotate(180deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes toBoldText {
+    from {
+        font-weight: 400;
+    }
+
+    to {
+        font-weight: 700;
+    }
+}
+
+@keyframes toRegularText {
+    from {
+        font-weight: 700;
+    }
+
+    to {
+        font-weight: 400;
+    }
+}
