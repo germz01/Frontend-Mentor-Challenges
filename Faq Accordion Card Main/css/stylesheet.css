@@ -1,17 +1,15 @@
 @use 'variables';
-#text-area { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-flow: column wrap; flex-flow: column wrap; }
+#text-area { width: 100%; height: 75%; }
 
-#text-area .text-content { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; width: 75%; border-bottom: 0.1rem solid #e7e7e9; }
+#text-area .text-content { height: 5rem; width: 75%; border-bottom: 0.1rem solid #e7e7e9; }
 
-#text-area .text-content .header { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-flow: row nowrap; flex-flow: row nowrap; -webkit-box-align: baseline; -ms-flex-align: baseline; align-items: baseline; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+#text-area .text-content .header .text h3 { font-family: 'Kumbh Sans', sans-serif; font-size: 1.2rem; font-weight: 400; color: #4a4b5e; margin: 0 0 0 0; }
 
-#text-area .text-content .header .text { -webkit-box-flex: 1; -ms-flex: 1 0 content; flex: 1 0 content; }
+#text-area .text-content .header .arrow { height: 0.7rem; background-image: url("../images/icon-arrow-down.svg"); background-repeat: no-repeat; background-position: bottom right; background-size: contain; }
 
-#text-area .text-content .header .text h3 { font-family: 'Kumbh Sans', sans-serif; font-size: 1.2rem; font-weight: 400; color: #4a4b5e; margin: 1rem 0 0 0; }
+#text-area .text-content .paragraphContainer { position: relative; display: none; }
 
-#text-area .text-content .header .arrow { -webkit-box-flex: 0; -ms-flex: 0 0 1rem; flex: 0 0 1rem; height: 0.7rem; background-image: url("../images/icon-arrow-down.svg"); background-repeat: no-repeat; background-position: bottom right; background-size: contain; }
-
-#text-area .text-content p { font-family: 'Kumbh Sans', sans-serif; font-size: 1.2rem; font-weight: 400; color: #787887; height: 0%; }
+#text-area .text-content .paragraphContainer p { font-family: 'Kumbh Sans', sans-serif; font-size: 1.2rem; font-weight: 400; color: #787887; position: absolute; margin: 0; }
 
 @-webkit-keyframes flipArrowUp { from { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
   to { -webkit-transform: rotate(180deg); transform: rotate(180deg); } }
@@ -37,6 +35,12 @@
 @keyframes toRegularText { from { font-weight: 700; }
   to { font-weight: 400; } }
 
+@-webkit-keyframes displayParagraph { from { display: none; }
+  to { display: block; } }
+
+@keyframes displayParagraph { from { display: none; }
+  to { display: block; } }
+
 html { -webkit-box-sizing: border-box; box-sizing: border-box; font-size: 62.5%; }
 
 *, *::before, ::after { -webkit-box-sizing: inherit; box-sizing: inherit; }
@@ -49,5 +53,11 @@ body { margin: 0; padding: 0; }
 
 #flex-container #accordion-card .accordion-column { -webkit-box-flex: 0; -ms-flex: 0 0 50%; flex: 0 0 50%; height: 100%; }
 
-#flex-container #accordion-card .accordion-column #column-content h2 { font-family: 'Kumbh Sans', sans-serif; font-size: 3rem; font-weight: 700; }
+#flex-container #accordion-card .accordion-column #column-content { height: 100%; }
+
+#flex-container #accordion-card .accordion-column #column-content #faq-div { height: 25%; }
+
+#flex-container #accordion-card .accordion-column #column-content #faq-div h2 { font-family: 'Kumbh Sans', sans-serif; font-size: 3rem; font-weight: 700; margin: 0 0 0 0; padding: 7rem 0 0 0; }
+
+#flex-container #accordion-card .accordion-column:first-child { background-image: url("../images/bg-pattern-desktop.svg"); background-repeat: no-repeat; background-position: 118% 68%; }
 /*# sourceMappingURL=stylesheet.css.map */

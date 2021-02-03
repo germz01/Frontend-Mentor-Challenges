@@ -38,12 +38,26 @@ body {
             height: 100%;
 
             #column-content {
-                h2 {
+                height: 100%;
+
+                #faq-div {
+                    height: 25%;
+                }
+
+                #faq-div h2 {
                     font-family: 'Kumbh Sans', sans-serif;
                     font-size: 3rem;
                     font-weight: 700;
+                    margin: 0 0 0 0;
+                    padding: 7rem 0 0 0;
                 }
             }
+        }
+
+        .accordion-column:first-child {
+            background-image: url('../images/bg-pattern-desktop.svg');
+            background-repeat: no-repeat;
+            background-position: 118% 68%;
         }
     }
 }
