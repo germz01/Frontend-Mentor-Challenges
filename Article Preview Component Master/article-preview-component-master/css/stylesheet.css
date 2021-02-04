@@ -48,12 +48,6 @@ body { margin: 0; padding: 0; }
 @keyframes fadeIn { from { opacity: 0; }
   to { opacity: 1; } }
 
-@-webkit-keyframes invertColor { from { background-color: #ecf2f8; }
-  to { background-color: #6d7f97; } }
-
-@keyframes invertColor { from { background-color: #ecf2f8; }
-  to { background-color: #6d7f97; } }
-
 @-webkit-keyframes fadeOut { from { opacity: 1; }
   to { opacity: 0; } }
 

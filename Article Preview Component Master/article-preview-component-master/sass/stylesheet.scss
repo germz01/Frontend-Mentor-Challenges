@@ -174,16 +174,6 @@ body {
     }
 }
 
-@keyframes invertColor {
-    from {
-        background-color: $lightGrayishBlue;
-    }
-
-    to {
-        background-color: $DesaturatedDarkBlue;
-    }
-}
-
 @keyframes fadeOut {
     from {
         opacity: 1;
