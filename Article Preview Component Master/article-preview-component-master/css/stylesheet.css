@@ -32,7 +32,7 @@ body { margin: 0; padding: 0; }
 
 #container-div #content-card .column:nth-of-type(2) #column-content #content-bottom .bottom-column #share-image { background-image: url("../images/icon-share.svg"); background-repeat: no-repeat; background-size: auto; background-color: #ecf2f8; background-position: center; height: 100%; border-radius: 50%; }
 
-#container-div #popup-message { position: absolute; left: 85.5rem; top: 48rem; background-color: #6d7f97; border-radius: 1rem; width: 24.8rem; height: 5.5rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-flow: row nowrap; flex-flow: row nowrap; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-pack: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; }
+#container-div #popup-message { position: absolute; background-color: #48556a; border-radius: 1rem; width: 24.8rem; height: 5.5rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-flow: row nowrap; flex-flow: row nowrap; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-pack: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; opacity: 0; }
 
 #container-div #popup-message span { font-size: 1.3rem; font-family: 'Manrope', sans-serif; font-weight: 500; color: #9eafc2; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; }
 
@@ -41,4 +41,22 @@ body { margin: 0; padding: 0; }
 #container-div #popup-message #share-twitter { background-image: url("../images/icon-twitter.svg"); -webkit-box-flex: 0; -ms-flex: 0 0 2rem; flex: 0 0 2rem; height: 2rem; background-repeat: no-repeat; }
 
 #container-div #popup-message #share-pinterest { background-image: url("../images/icon-pinterest.svg"); -webkit-box-flex: 0; -ms-flex: 0 0 2rem; flex: 0 0 2rem; height: 2rem; background-repeat: no-repeat; }
+
+@-webkit-keyframes fadeIn { from { opacity: 0; }
+  to { opacity: 1; } }
+
+@keyframes fadeIn { from { opacity: 0; }
+  to { opacity: 1; } }
+
+@-webkit-keyframes invertColor { from { background-color: #ecf2f8; }
+  to { background-color: #6d7f97; } }
+
+@keyframes invertColor { from { background-color: #ecf2f8; }
+  to { background-color: #6d7f97; } }
+
+@-webkit-keyframes fadeOut { from { opacity: 1; }
+  to { opacity: 0; } }
+
+@keyframes fadeOut { from { opacity: 1; }
+  to { opacity: 0; } }
 /*# sourceMappingURL=stylesheet.css.map */
