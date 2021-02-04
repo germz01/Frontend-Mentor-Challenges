@@ -21,6 +21,7 @@ body {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+    position: relative;
 
     #content-card {
         background-color: white;
@@ -116,6 +117,50 @@ body {
                     }
                 }
             }
+        }
+    }
+
+    #popup-message {
+        position: absolute;
+        left: 85.5rem;
+        top: 48rem;
+        background-color: $DesaturatedDarkBlue;
+        border-radius: 1rem;
+        width: 24.8rem;
+        height: 5.5rem;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-evenly;
+
+        span {
+            font-size: 1.3rem;
+            font-family: 'Manrope', sans-serif;
+            font-weight: 500;
+            color: $grayishBlue;
+            flex: 0 0 auto;
+        }
+
+        #share-facebook {
+            background-image: url('../images/icon-facebook.svg');
+            flex: 0 0 2rem;
+            height: 2rem;
+            background-repeat: no-repeat;
+        }
+
+        #share-twitter {
+            background-image: url('../images/icon-twitter.svg');
+            flex: 0 0 2rem;
+            height: 2rem;
+            background-repeat: no-repeat;
+        }
+
+        #share-pinterest {
+            background-image: url('../images/icon-pinterest.svg');
+            flex: 0 0 2rem;
+            height: 2rem;
+            background-repeat: no-repeat;
         }
     }
 }
