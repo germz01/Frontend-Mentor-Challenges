@@ -1,9 +1,8 @@
-function displaySharePopup() {
-    let shareButtonCoordinates = document.getElementById("share-image").getBoundingClientRect();
-    let sharePopup = document.getElementById("popup-message");
-    let shareButtonCenter = shareButtonCoordinates["left"] + (shareButtonCoordinates["width"] / 2);
+document.querySelector("#share-image").addEventListener("click", function() {
+    let sharePopup = document.querySelector("#popup-message");
+    let shareButtonCenter = this.getBoundingClientRect()["left"] + (this.getBoundingClientRect()["width"] / 2);
 
-    sharePopup.style["top"] = (shareButtonCoordinates["top"] - (shareButtonCoordinates["height"] * 2)) + "px";
+    sharePopup.style["top"] = (this.getBoundingClientRect()["top"] - (this.getBoundingClientRect()["height"] * 2)) + "px";
     sharePopup.style["left"] = shareButtonCenter - (sharePopup.offsetWidth / 2) + "px";
 
     if (sharePopup.style["animation-name" ] === "fadeOut" || sharePopup.style["animation-name"] === "") {
@@ -12,4 +11,4 @@ function displaySharePopup() {
     else {
         sharePopup.style["animation"] = "fadeOut 0.5s forwards";
     }
-}
+});
