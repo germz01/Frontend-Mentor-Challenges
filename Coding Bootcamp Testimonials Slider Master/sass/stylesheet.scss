@@ -1,0 +1,65 @@
+@import 'variables';
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../images/pattern-curve.svg");
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+
+    article {
+        flex: 0 0 75%;
+        height: 65%;
+        display: flex;
+        flex-flow: row nowrap;
+        background-image: url("../images/pattern-bg.svg");
+        background-repeat: no-repeat;
+        background-position-x: right;
+
+        section {
+            flex: 0 0 50%;
+            height: 100%;
+        }
+
+        section:nth-child(1) {
+            background-image: url("../images/pattern-quotes.svg");
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position-x: 36%;
+            background-position-y: 20%;
+        }
+
+        section:nth-child(2) {
+            background-image: url("../images/image-tanya.jpg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            position: relative;
+
+            div {
+                position: absolute;
+                height: 200px;
+                width: 640px;
+                top: 28%;
+                right: 86%;
+                
+                p {
+                    margin: 0;
+                    font-size: $defaultFontSize;
+                    font-family: $defaultFontFamily;
+                    font-weight: 300;
+                    color: $darkBlue;   
+                }
+            }
+        }
+    }
+}
