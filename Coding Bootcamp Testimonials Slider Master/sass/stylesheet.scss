@@ -15,15 +15,25 @@ main {
     background-image: url("../images/pattern-curve.svg");
     background-repeat: no-repeat;
     background-position-y: bottom;
+    position: relative;
+
+    img {
+        position: absolute;
+        top: 3%;
+        left: 45%;
+        width: 800px;
+        height: 800px;
+    }
 
     article {
         flex: 0 0 75%;
         height: 65%;
         display: flex;
         flex-flow: row nowrap;
-        background-image: url("../images/pattern-bg.svg");
-        background-repeat: no-repeat;
-        background-position-x: right;
+        // background-image: url("../images/pattern-bg.svg");
+        // background-repeat: no-repeat;
+        // background-position-x: right;
+        // background-size: contain;
 
         section {
             flex: 0 0 50%;

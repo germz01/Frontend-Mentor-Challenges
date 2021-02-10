@@ -1,8 +1,10 @@
 body { margin: 0; padding: 0; }
 
-main { width: 100%; height: 100vh; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-flow: row nowrap; flex-flow: row nowrap; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; background-image: url("../images/pattern-curve.svg"); background-repeat: no-repeat; background-position-y: bottom; }
+main { width: 100%; height: 100vh; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-flow: row nowrap; flex-flow: row nowrap; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; background-image: url("../images/pattern-curve.svg"); background-repeat: no-repeat; background-position-y: bottom; position: relative; }
 
-main article { -webkit-box-flex: 0; -ms-flex: 0 0 75%; flex: 0 0 75%; height: 65%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-flow: row nowrap; flex-flow: row nowrap; background-image: url("../images/pattern-bg.svg"); background-repeat: no-repeat; background-position-x: right; }
+main img { position: absolute; top: 3%; left: 45%; width: 800px; height: 800px; }
+
+main article { -webkit-box-flex: 0; -ms-flex: 0 0 75%; flex: 0 0 75%; height: 65%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-flow: row nowrap; flex-flow: row nowrap; }
 
 main article section { -webkit-box-flex: 0; -ms-flex: 0 0 50%; flex: 0 0 50%; height: 100%; }
 
