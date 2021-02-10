@@ -30,10 +30,6 @@ main {
         height: 65%;
         display: flex;
         flex-flow: row nowrap;
-        // background-image: url("../images/pattern-bg.svg");
-        // background-repeat: no-repeat;
-        // background-position-x: right;
-        // background-size: contain;
 
         section {
             flex: 0 0 50%;
@@ -67,7 +63,20 @@ main {
                     font-size: $defaultFontSize;
                     font-family: $defaultFontFamily;
                     font-weight: 300;
-                    color: $darkBlue;   
+                    color: $darkBlue;
+
+                    span {
+                        font-size: 50%;
+                    }
+
+                    #profession {
+                        color: $grayishBlue;
+                        font-weight: 500;
+                    }
+                }
+
+                p:nth-child(2) {
+                    margin-top: 1rem;
                 }
             }
         }

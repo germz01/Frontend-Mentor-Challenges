@@ -15,4 +15,10 @@ main article section:nth-child(2) { background-image: url("../images/image-tanya
 main article section:nth-child(2) div { position: absolute; height: 200px; width: 640px; top: 28%; right: 86%; }
 
 main article section:nth-child(2) div p { margin: 0; font-size: 32px; font-family: "Inter", sans-serif; font-weight: 300; color: #202046; }
+
+main article section:nth-child(2) div p span { font-size: 50%; }
+
+main article section:nth-child(2) div p #profession { color: #babacf; font-weight: 500; }
+
+main article section:nth-child(2) div p:nth-child(2) { margin-top: 1rem; }
 /*# sourceMappingURL=stylesheet.css.map */
